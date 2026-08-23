@@ -60,11 +60,6 @@ mask_rgb = np.asarray(Image.open(root / "Truth" / f"DL2D{sample_id}.png"))
 mask = mask_rgb[..., 0]
 ```
 
-## Integrity and verification
-
-- Run `python verify_dataset.py` from the repository root to verify file
-  pairing, shapes, label values, and finite 3D values.
-
 ## Dataset context
 
 The complete private dataset contains 5,000 aligned samples acquired using a
@@ -77,13 +72,5 @@ This repository contains a 500-sample release rather than the complete private
 dataset. The repository does not include geographic coordinates, road-section
 identifiers, personal identifiers, or acquisition timestamps.
 
-## Citation
 
-If you use this release, please cite the associated MAHPL manuscript. Formal
-bibliographic metadata will be added after publication.
-
-## License
-
-The dataset license will be stated explicitly before the public release is
-finalized.
 
