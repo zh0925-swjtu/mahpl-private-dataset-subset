@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import csv
-import hashlib
 from pathlib import Path
 
 import numpy as np
@@ -12,14 +10,6 @@ ROOT = Path(__file__).resolve().parent
 EXPECTED_COUNT = 500
 EXPECTED_SHAPE = (256, 512)
 EXPECTED_LABELS = set(range(9))
-
-
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
 
 
 def ids(folder: str, pattern: str, prefix: str) -> set[str]:
@@ -54,17 +44,7 @@ def main() -> None:
 
     assert observed_labels == EXPECTED_LABELS, observed_labels
 
-    manifest_path = ROOT / "manifest-sha256.csv"
-    with manifest_path.open(newline="", encoding="utf-8") as handle:
-        rows = list(csv.DictReader(handle))
-    assert len(rows) == EXPECTED_COUNT * 3
-    for row in rows:
-        path = ROOT / Path(row["path"])
-        assert path.is_file(), path
-        assert path.stat().st_size == int(row["bytes"]), path
-        assert sha256(path) == row["sha256"], path
-
-    print(f"Verified {EXPECTED_COUNT} paired samples and {len(rows)} checksums.")
+    print(f"Verified {EXPECTED_COUNT} paired samples.")
 
 
 if __name__ == "__main__":

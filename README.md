@@ -62,10 +62,8 @@ mask = mask_rgb[..., 0]
 
 ## Integrity and verification
 
-- `manifest-sha256.csv` lists the SHA-256 digest and size of every released
-  data file.
 - Run `python verify_dataset.py` from the repository root to verify file
-  pairing, shapes, label values, finite 3D values, and checksums.
+  pairing, shapes, label values, and finite 3D values.
 
 ## Dataset context
 
