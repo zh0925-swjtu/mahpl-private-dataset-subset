@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this dataset subset, please cite the associated MAHPL manuscript."
+title: "MAHPL aligned 2D-3D pavement dataset: 500-sample release"
+type: dataset
+authors:
+  - family-names: Zhang
+    given-names: Aonan
+version: 1.0.0
+date-released: 2026-08-23
+license: unspecified
+
