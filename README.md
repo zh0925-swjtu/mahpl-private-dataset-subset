@@ -1,4 +1,4 @@
-# MAHPL aligned 2D-3D pavement dataset: 500-sample release
+# MAHPL aligned 2D-3D pavement dataset
 
 This repository releases 500 pixel-aligned pavement samples from the private
 dataset used to evaluate Morphology-Aware Hierarchical Prototype Learning
