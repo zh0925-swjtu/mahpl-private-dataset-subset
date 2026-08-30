@@ -24,7 +24,7 @@ The release contains 500 complete triplets (1,500 files total):
 
 Every `.bin` file contains exactly 131,072 finite `float32` values and can be
 reshaped directly to `(256, 512)`. Across this release, the observed 3D value
-range is `[-2.5, 2.5]`. The images contain no EXIF metadata.
+range is `[-2.5, 2.5]`. 
 
 ## Semantic labels
 
