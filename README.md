@@ -41,7 +41,7 @@ range is `[-2.5, 2.5]`. The images contain no EXIF metadata.
 | 7 | manhole cover |
 | 8 | scratch |
 
-## Minimal Python loader
+## Python loader
 
 ```python
 from pathlib import Path
