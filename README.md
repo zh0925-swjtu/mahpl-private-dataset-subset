@@ -1,8 +1,11 @@
 # MAHPL aligned 2D-3D pavement dataset
 
-This repository releases 500 aligned pavement samples from the private
-dataset used to evaluate Morphology-Aware Hierarchical Prototype Learning
-(MAHPL). 
+This repository provides 500 aligned 2D–3D pavement samples from the private 
+dataset used in “Rethinking Pavement Distress Segmentation With Morphological 
+Prior Constraints”. The paper proposes the Morphology-Aware Hierarchical Prototype 
+Learning (MAHPL) framework, which organizes pavement distress categories into a 
+morphology-oriented two-level hierarchy and jointly learns coarse morphology-level and 
+fine-grained semantic-level prototypes.
 
 ## Contents
 
