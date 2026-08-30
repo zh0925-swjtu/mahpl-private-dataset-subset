@@ -69,8 +69,7 @@ texture image, an aligned 3D pavement surface array, and a pixel-level semantic
 mask. The eight foreground classes are listed above.
 
 This repository contains a 500-sample release rather than the complete private
-dataset. The repository does not include geographic coordinates, road-section
-identifiers, personal identifiers, or acquisition timestamps.
+dataset. 
 
 
 
